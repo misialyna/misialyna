@@ -35,61 +35,63 @@ I've presented research at national and international conferences (Poland, Roman
 
 ## Featured Projects
 
-### [AIWAT / WATUS](https://github.com/misialyna/watus_project) — Real-time voice & vision stack for an autonomous robot
+### [WATUS v1](https://github.com/misialyna/watus_project) · [WATUS v2](https://github.com/misialyna/watus_project_2) — Real-time voice & vision stack for an autonomous robot
 
-Award-winning interactive robot deployed at university events. I built the low-latency voice frontend: it listens, recognises who is speaking, transcribes, reasons via an LLM backend, sees its surroundings, and replies out loud — all on edge hardware (NVIDIA Jetson AGX Orin).
+Award-winning interactive robot deployed at university events. I built the low-latency voice frontend: it listens, recognises who is speaking, transcribes, reasons via an LLM backend, sees its surroundings, and replies out loud — all on edge hardware (NVIDIA Jetson AGX Orin). v2 adds Groq cloud STT, improved Piper TTS integration and a companion [BellaBot web interface](https://github.com/misialyna/interfejs).
 
 | Component | Implementation |
 |---|---|
 | Speaker verification | ECAPA-TDNN (SpeechBrain) — locks onto a single leader voice |
-| Speech-to-text | WebRTC VAD + Faster-Whisper streaming |
+| Speech-to-text | WebRTC VAD + Faster-Whisper streaming · Groq Whisper API (v2) |
 | Object detection | RT-DETR / YOLO (Ultralytics + OpenCV) feeding visual context into each report |
 | Reasoning & synthesis | Structured reports pushed to LLM backend over HTTP; Piper neural TTS for reply |
 | Architecture | Decoupled, event-driven microservices over ZeroMQ PUB/SUB |
 
-`Python` `C++` `PyTorch` `SpeechBrain` `Faster-Whisper` `Piper` `Ultralytics RT-DETR` `ZeroMQ` `FastAPI` `Edge AI`
+`Python` `C++` `PyTorch` `SpeechBrain` `Faster-Whisper` `Piper` `Groq` `Ultralytics RT-DETR` `ZeroMQ` `FastAPI` `Edge AI`
 
 ---
 
-### [CS CTF 2025](https://github.com/misialyna/cs-ctf-2025) — Three-challenge CTF suite authored for the 2024/2025 academic competition
+### [AUD1 STT/TTS Benchmark](https://github.com/misialyna/stt-tts-benchmark) — Polish-language speech evaluation toolkit
 
-A full three-challenge CTF competition designed and built for the WAT CyberSecurity Science Club's annual competition. Each challenge is self-contained with its own infrastructure, solution guide, and deployment option.
+HTTP benchmark server with a web UI for comparing STT and TTS engines on Polish speech. Includes 25 annotated audio samples across five difficulty categories (everyday, military, phonetic, numbers, complex/noisy) and result tracking with WER and latency metrics.
 
-| Challenge | Category | Technique |
+| Engine | Type | Notes |
 |---|---|---|
-| Social Engineering | Phishing analysis | Identify indicators in a convincing phishing email; discover a hidden flag in the confirmation page source |
-| Web Exploitation | Command injection + insecure file upload | Flask app with intentional RCE via `subprocess` and unrestricted upload endpoint |
-| Network Exploitation | HTTP header manipulation | Forge `X-Forwarded-For` to spoof a privileged IP and access the admin panel |
+| Faster-Whisper | STT | Local, models: tiny → large |
+| Groq Whisper API | STT | Cloud, whisper-large-v3 |
+| Piper TTS | TTS | Local Polish voices: darkman, gosia |
+| Supertonic TTS | TTS | API-based |
+
+`Python` `faster-whisper` `Piper TTS` `Groq` `HTML` `Audio processing` `Benchmarking`
+
+---
+
+### CTF 2024/2025 — WAT CyberSecurity Club Competition
+
+Three-challenge CTF suite authored for the 2024/2025 academic competition. Each challenge is self-contained with infrastructure, solution guide, and deployment option.
+
+| Challenge | Repository | Category | Technique |
+|---|---|---|---|
+| Social Engineering | [ctf-social-engineering](https://github.com/misialyna/ctf-social-engineering) | Phishing analysis | Identify indicators in a phishing email; find a hidden flag in the confirmation page source |
+| Web Exploitation | [ctf-web-exploitation](https://github.com/misialyna/ctf-web-exploitation) | Command injection + file upload | Flask app with intentional RCE via `subprocess` and unrestricted upload endpoint |
+| Network Exploitation | [ctf-network-exploitation](https://github.com/misialyna/ctf-network-exploitation) | HTTP header manipulation | Forge `X-Forwarded-For` to spoof a privileged IP and access the admin panel |
 
 `Python` `Flask` `HTML/CSS` `Web Security` `CTF Design` `Network Exploitation`
 
 ---
 
-### [Phishing-Bank CTF](https://github.com/misialyna/phishing-bank-ctf-2026) — Multi-stage security challenge authored for the 2025/2026 academic competition
+### CTF 2025/2026 — Multi-stage chained challenge
 
-A three-part chained CTF: players analyse a fake online bank ("SecureBank"), decode a Base64 cipher trail, solve a linear equation system to derive login credentials, and finally authenticate to capture the flag. Ships with a complete solution guide and three deployment options.
+A four-part chained CTF authored for the 2025/2026 academic competition. Solving each stage unlocks the next — from cryptography and algebra through a phishing bank login to OSINT and steganography.
 
-| Stage | Technique |
-|---|---|
-| Encrypted Trail | Base64 decoding + linear algebra to derive credentials |
-| Phishing Bank | HTML source analysis, hidden comments, authentication bypass |
-| OSINT | Metadata and social media analysis from a certificate image |
+| Stage | Repository | Category | Technique |
+|---|---|---|---|
+| 1 — Encrypted Trail | [ctf-szyfrowany-trop](https://github.com/misialyna/ctf-szyfrowany-trop) | Cryptography + logic | Base64 decoding, solve a system of linear equations to derive login credentials |
+| 2 — Phishing Bank | [ctf-falszywy-bank](https://github.com/misialyna/ctf-falszywy-bank) | Web security | Analyse HTML source, find a hidden Base64 comment, authenticate with credentials from stage 1 |
+| 3 — The Spy | [ctf-the-spy](https://github.com/misialyna/ctf-the-spy) | OSINT | Analyse a certificate image, locate the subject on social media, decode a hidden message |
+| 4 — Landscape | [ctf-landscape](https://github.com/misialyna/ctf-landscape) | Steganography | Extract a hidden flag from image metadata via `exiftool` |
 
-`Python` `Flask` `HTML/CSS` `JavaScript` `Web Security` `CTF Design` `Steganography` `OSINT`
-
----
-
-### [CTF Challenge Collection — Archiwum](https://github.com/misialyna/ctf-archiwum) — Additional authored challenges
-
-A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
-
-| Challenge | Category | Technique |
-|---|---|---|
-| Landscape | Steganography | Extract a hidden flag from image metadata via `exiftool` |
-| Szyfrowany Trop | Cryptography + logic | Decode Base64, solve a system of equations to reconstruct credentials |
-| The Spy | OSINT | Analyse a certificate image, find the subject's social media profile, decode a hidden message |
-
-`CTF Design` `Steganography` `OSINT` `Cryptography` `Python`
+`Python` `Flask` `HTML/CSS` `CTF Design` `Steganography` `OSINT` `Cryptography`
 
 ---
 
@@ -169,12 +171,11 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 |---|---|
 | 2026 | **1st place** — Students' Cybernetics Symposium (SCS) 2026, situational awareness in AIWAT |
 | 2026 | **Rector's Award** — best student research project in a science club (AIWAT / "Waciak") |
-| 2026 | **Letter of commendation** from the Rector-Commandant for outstanding scientific achievement in Poland and abroad |
+| 2026 | **Letter of commendation** from the Rector-Commandant for outstanding scientific achievement at home and abroad |
 | 2026 | **3rd place** — "Military Sciences & Information", 48th Cadet-Nav Scientific Conference, Naval Academy "Mircea cel Bătrân", Romania |
-| 2026 | Preparing original tasks for the university CTF competition (3rd etition) |
 | 2025 | **2nd place** — Students' Cybernetics Symposium (SCS) 2025, HelpDesk project |
 | 2025 | Certificate for contribution to the academic community & student research movement |
-| 2025 | Preparing original tasks for the university CTF competition (2nd edition) |
+| 2025 | Top annual assessment (6/6) · distinguished-student invitation to Cadet Day at the Belweder Palace |
 | ongoing | Secretary of the WAT CyberSecurity Science Club — co-organiser of CTF competition & conferences |
 
 <details>
@@ -186,13 +187,13 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 - Lecture on building information advantage with AI technology — scientific seminar of the Doctrine & Training Centre of the Polish Armed Forces (Mar 2026)
 - Speaker at the WCY WAT academic-year inauguration (Oct 2025) and WCY alumni reunion (Sep 2025)
 - Presented AIWAT at the 60th-anniversary gala of the Cybernetics Interest Club (Dec 2025)
-- Research talk at the inaugural Students' Cybernetics Symposium — hypercomplex numbers in programming
+- First research talk at the inaugural Students' Cybernetics Symposium — hypercomplex numbers in programming
 - Participant, XXX PTSK Scientific Workshops — "Simulation in Research & Development" (May 2026)
 
 **Organisation & leadership**
 
 - Secretary, WAT CyberSecurity Science Club — authored CTF challenges, deputy of the SCS conference organising committee, organiser of the club's 60th-anniversary gala
-- Supervised international delegations (Romania, Norway, Greece, Ukraine, Latvia) at the University
+- Supervised international delegations (Romania, Norway, Greece, Ukraine, Latvia) at the WAT Commando Half-Marathon
 - Runs the club's LinkedIn and writes cybersecurity articles for WAT outlets
 
 **International training & exchange (EMILYO / Erasmus+)**
@@ -200,7 +201,6 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 - Romania — International Students' Week + SECOSAFT & CADET INOVA conferences
 - Greece — Summer Military Training Programme (land navigation, field medicine, naval ops, fire support)
 - France — Common Security & Defence Policy training, Air & Space Force Academy (Mar 2026)
-- Romania - "Military Sciences & Information", 48th Cadet-Nav Scientific Conference, Naval Academy "Mircea cel Bătrân"
 
 </details>
 
