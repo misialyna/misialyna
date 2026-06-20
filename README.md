@@ -169,11 +169,12 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 |---|---|
 | 2026 | **1st place** — Students' Cybernetics Symposium (SCS) 2026, situational awareness in AIWAT |
 | 2026 | **Rector's Award** — best student research project in a science club (AIWAT / "Waciak") |
-| 2026 | **Letter of commendation** from the Rector-Commandant for outstanding scientific achievement at home and abroad |
+| 2026 | **Letter of commendation** from the Rector-Commandant for outstanding scientific achievement in Poland and abroad |
 | 2026 | **3rd place** — "Military Sciences & Information", 48th Cadet-Nav Scientific Conference, Naval Academy "Mircea cel Bătrân", Romania |
+| 2026 | Preparing original tasks for the university CTF competition (3rd etition) |
 | 2025 | **2nd place** — Students' Cybernetics Symposium (SCS) 2025, HelpDesk project |
 | 2025 | Certificate for contribution to the academic community & student research movement |
-| 2025 | Top annual assessment (6/6) · distinguished-student invitation to Cadet Day at the Belweder Palace |
+| 2025 | Preparing original tasks for the university CTF competition (2nd edition) |
 | ongoing | Secretary of the WAT CyberSecurity Science Club — co-organiser of CTF competition & conferences |
 
 <details>
@@ -185,13 +186,13 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 - Lecture on building information advantage with AI technology — scientific seminar of the Doctrine & Training Centre of the Polish Armed Forces (Mar 2026)
 - Speaker at the WCY WAT academic-year inauguration (Oct 2025) and WCY alumni reunion (Sep 2025)
 - Presented AIWAT at the 60th-anniversary gala of the Cybernetics Interest Club (Dec 2025)
-- First research talk at the inaugural Students' Cybernetics Symposium — hypercomplex numbers in programming
+- Research talk at the inaugural Students' Cybernetics Symposium — hypercomplex numbers in programming
 - Participant, XXX PTSK Scientific Workshops — "Simulation in Research & Development" (May 2026)
 
 **Organisation & leadership**
 
 - Secretary, WAT CyberSecurity Science Club — authored CTF challenges, deputy of the SCS conference organising committee, organiser of the club's 60th-anniversary gala
-- Supervised international delegations (Romania, Norway, Greece, Ukraine, Latvia) at the WAT Commando Half-Marathon
+- Supervised international delegations (Romania, Norway, Greece, Ukraine, Latvia) at the University
 - Runs the club's LinkedIn and writes cybersecurity articles for WAT outlets
 
 **International training & exchange (EMILYO / Erasmus+)**
@@ -199,6 +200,7 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 - Romania — International Students' Week + SECOSAFT & CADET INOVA conferences
 - Greece — Summer Military Training Programme (land navigation, field medicine, naval ops, fire support)
 - France — Common Security & Defence Policy training, Air & Space Force Academy (Mar 2026)
+- Romania - "Military Sciences & Information", 48th Cadet-Nav Scientific Conference, Naval Academy "Mircea cel Bătrân"
 
 </details>
 
