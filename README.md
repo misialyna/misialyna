@@ -1,4 +1,4 @@
-<img width="100%" src="banner.svg" alt="Michalina Moszyńska — Cryptology &amp; Cybersecurity · AI Multi-Agent Systems · Edge Robotics" />
+<img width="100%" src="github_profile_banner.svg" alt="Michalina Moszyńska — Cryptology &amp; Cybersecurity · AI Multi-Agent Systems · Edge Robotics" />
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=14B8A6&center=true&vCenter=true&width=720&lines=Cybersecurity+%26+Cryptology+%E2%80%94+WAT+Warsaw;Voice+AI+%7C+Edge+Robotics+%7C+Applied+Cryptography;CTF+author+%26+security+practitioner;Award-winning+autonomous+robotics+(AIWAT)" alt="Typing roles" />
