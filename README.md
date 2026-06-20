@@ -66,6 +66,22 @@ HTTP benchmark server with a web UI for comparing STT and TTS engines on Polish 
 
 ---
 
+### [ASR Edge Evaluation Workbench](https://github.com/misialyna/asr-edge-evaluation-workbench) — Benchmarking ASR models on edge hardware
+
+Toolkit do ewaluacji modeli Whisper na **NVIDIA Jetson Orin** i CPU. Mierzy WER, CER, RTF, latencję oraz zasoby (RAM, GPU, temperatura, moc) via `tegrastats`/`psutil`. Generuje raport Markdown i dashboard Streamlit z automatyczną rekomendacją konfiguracji. Zaprojektowany z myślą o systemie voice WATUS.
+
+| Komponent | Implementacja |
+|---|---|
+| Runtime | `FasterWhisperAdapter` + `FakeAdapter` (Protocol pattern) |
+| Telemetria | `tegrastats` (JetPack 5 & 6) z fallbackiem `psutil` |
+| Metryki | WER · CER · RTF · RTFx · latency (Polish text normalizer) |
+| Rekomendacja | Rule-based z konfigurowalnymi wagami (WER·0.5, RTFx·0.3, RAM·0.2) |
+| Raportowanie | Jinja2 Markdown + matplotlib · Streamlit dashboard (4 widoki) |
+
+`Python` `Faster-Whisper` `Pydantic v2` `Streamlit` `tegrastats` `NVIDIA Jetson` `Edge AI` `Polish NLP`
+
+---
+
 ### CTF 2024/2025 — WAT CyberSecurity Club Competition
 
 Three-challenge CTF suite authored for the 2024/2025 academic competition. Each challenge is self-contained with infrastructure, solution guide, and deployment option.
