@@ -1,0 +1,16 @@
+<svg width="100%" viewBox="0 0 690 170" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Michalina Moszyńska — GitHub profile banner</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Profile banner with name and tagline on a dark blue-to-teal gradient</desc>
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#0b3d91"/>
+    <stop offset="50%" style="stop-color:#0e7490"/>
+    <stop offset="100%" style="stop-color:#14b8a6"/>
+  </linearGradient>
+</defs>
+<rect width="680" height="160" fill="url(#bg)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M0,130 Q170,100 340,120 Q510,140 680,110 L680,160 L0,160 Z" fill="rgba(255,255,255,0.06)" style="fill:rgba(255, 255, 255, 0.06);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M0,145 Q200,125 400,138 Q550,148 680,130 L680,160 L0,160 Z" fill="rgba(255,255,255,0.04)" style="fill:rgba(255, 255, 255, 0.04);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="340" y="72" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="600" fill="#ffffff" letter-spacing="1" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:36px;font-weight:600;text-anchor:middle;dominant-baseline:auto">Michalina Moszyńska</text>
+<text x="340" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="400" fill="rgba(255,255,255,0.82)" letter-spacing="0.5" style="fill:rgba(255, 255, 255, 0.82);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:14px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Cryptology &amp; Cybersecurity · AI Multi-Agent Systems · Edge Robotics</text>
+</svg>
