@@ -1,6 +1,4 @@
-<a href="https://github.com/misialyna">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0b3d91,50:0e7490,100:14b8a6&height=180&section=header&text=Michalina%20Moszy%C5%84ska&fontSize=44&fontColor=ffffff&fontAlignY=38&desc=Cryptology%20%26%20Cybersecurity%20%C2%B7%20AI%20Multi-Agent%20Systems%20%C2%B7%20Edge%20Robotics&descSize=16&descAlignY=60" alt="Michalina Moszyńska" />
-</a>
+<img width="100%" src="banner.svg" alt="Michalina Moszyńska — Cryptology &amp; Cybersecurity · AI Multi-Agent Systems · Edge Robotics" />
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=14B8A6&center=true&vCenter=true&width=720&lines=Cybersecurity+%26+Cryptology+%E2%80%94+WAT+Warsaw;Voice+AI+%7C+Edge+Robotics+%7C+Applied+Cryptography;CTF+author+%26+security+practitioner;Award-winning+autonomous+robotics+(AIWAT)" alt="Typing roles" />
@@ -223,5 +221,3 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 </div>
 
 <br/>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:14b8a6,50:0e7490,100:0b3d91&height=100&section=footer" alt="footer" />
