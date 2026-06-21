@@ -167,13 +167,13 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 | Year | Award |
 |---|---|
 | 2026 | **1st place** — Students' Cybernetics Symposium (SCS) 2026, situational awareness in AIWAT |
-| 2026 | **Rector's Award** — best student research project in a science club (AIWAT / "Waciak") |
+| 2026 | **Rector's Award** — best student project in a science club (AIWAT / "Waciak") |
 | 2026 | **Letter of commendation** from the Rector-Commandant for outstanding scientific achievement at home and abroad |
 | 2026 | **3rd place** — "Military Sciences & Information", 48th Cadet-Nav Scientific Conference, Naval Academy "Mircea cel Bătrân", Romania |
 | 2025 | **2nd place** — Students' Cybernetics Symposium (SCS) 2025, HelpDesk project |
 | 2025 | Certificate for contribution to the academic community & student research movement |
-| 2025 | Top annual assessment (6/6) · distinguished-student invitation to Cadet Day at the Belweder Palace |
-| ongoing | Secretary of the WAT CyberSecurity Science Club — co-organiser of CTF competition & conferences |
+| 2025 | Top annual assessment · distinguished-student invitation to the Belweder Palace |
+| 2024-2026 | Secretary of the WAT CyberSecurity Science Club — co-organiser of CTF competition & conferences |
 
 <details>
 <summary><b>Talks, conferences & leadership</b></summary>
