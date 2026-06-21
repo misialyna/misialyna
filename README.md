@@ -24,9 +24,8 @@ I'm a Cryptology & Cybersecurity student at the Faculty of Cybernetics, Military
 
 I build things that have to work in the real world — under latency budgets, on edge hardware, in front of a live audience. My flagship work is **AIWAT**, an autonomous interactive robot whose real-time voice stack I designed and engineered end-to-end; it won the Rector's award for the best student research project and took **1st place at the Students' Cybernetics Symposium 2026**. Alongside AI/robotics, I work in offensive and defensive security: I author and run CTF challenges, study digital forensics and web exploitation, and serve as Secretary of the WAT CyberSecurity Science Club.
 
-I've presented research at national and international conferences (Poland, Romania), trained across Europe through military exchange programmes (EMILYO / Erasmus+ in Romania, Greece and France), and I care about turning hard technical work into something people can actually understand and use.
+I've presented research at national and international conferences (Poland, Romania, France), trained across Europe through military exchange programmes (EMILYO / Erasmus+ in Romania, Greece and France), and I care about turning hard technical work into something people can actually understand and use.
 
-**Master's thesis (exp. 2027)** — semantic steganography in autoregressive audio generation models (hiding information in the token space of neural audio codecs)  
 **Languages** — Polish (native) · English (professional)  
 **Graduating** — June 2027 · 5-year integrated Master's, currently 4th year  
 **Open to** — AI/ML engineering and applied security roles
@@ -35,79 +34,61 @@ I've presented research at national and international conferences (Poland, Roman
 
 ## Featured Projects
 
-### [WATUS v1](https://github.com/misialyna/watus_project) · [WATUS v2](https://github.com/misialyna/watus_project_2) — Real-time voice & vision stack for an autonomous robot
+### [AIWAT / WATUS](https://github.com/misialyna/watus_project) — Real-time voice & vision stack for an autonomous robot
 
-Award-winning interactive robot deployed at university events. I built the low-latency voice frontend: it listens, recognises who is speaking, transcribes, reasons via an LLM backend, sees its surroundings, and replies out loud — all on edge hardware (NVIDIA Jetson AGX Orin). v2 adds Groq cloud STT, improved Piper TTS integration and a companion [BellaBot web interface](https://github.com/misialyna/interfejs).
+Award-winning interactive robot deployed at university events. I built the low-latency voice frontend: it listens, recognises who is speaking, transcribes, reasons via an LLM backend, sees its surroundings, and replies out loud — all on edge hardware (NVIDIA Jetson AGX Orin).
 
 | Component | Implementation |
 |---|---|
 | Speaker verification | ECAPA-TDNN (SpeechBrain) — locks onto a single leader voice |
-| Speech-to-text | WebRTC VAD + Faster-Whisper streaming · Groq Whisper API (v2) |
+| Speech-to-text | WebRTC VAD + Faster-Whisper streaming |
 | Object detection | RT-DETR / YOLO (Ultralytics + OpenCV) feeding visual context into each report |
 | Reasoning & synthesis | Structured reports pushed to LLM backend over HTTP; Piper neural TTS for reply |
 | Architecture | Decoupled, event-driven microservices over ZeroMQ PUB/SUB |
 
-`Python` `C++` `PyTorch` `SpeechBrain` `Faster-Whisper` `Piper` `Groq` `Ultralytics RT-DETR` `ZeroMQ` `FastAPI` `Edge AI`
+`Python` `C++` `PyTorch` `SpeechBrain` `Faster-Whisper` `Piper` `Ultralytics RT-DETR` `ZeroMQ` `FastAPI` `Edge AI`
 
 ---
 
-### [AUD1 STT/TTS Benchmark](https://github.com/misialyna/stt-tts-benchmark) — Polish-language speech evaluation toolkit
+### [CS CTF 2025](https://github.com/misialyna/cs-ctf-2025) — Three-challenge CTF suite authored for the 2024/2025 academic competition
 
-HTTP benchmark server with a web UI for comparing STT and TTS engines on Polish speech. Includes 25 annotated audio samples across five difficulty categories (everyday, military, phonetic, numbers, complex/noisy) and result tracking with WER and latency metrics.
+A full three-challenge CTF competition designed and built for the WAT CyberSecurity Science Club's annual competition. Each challenge is self-contained with its own infrastructure, solution guide, and deployment option.
 
-| Engine | Type | Notes |
+| Challenge | Category | Technique |
 |---|---|---|
-| Faster-Whisper | STT | Local, models: tiny → large |
-| Groq Whisper API | STT | Cloud, whisper-large-v3 |
-| Piper TTS | TTS | Local Polish voices: darkman, gosia |
-| Supertonic TTS | TTS | API-based |
-
-`Python` `faster-whisper` `Piper TTS` `Groq` `HTML` `Audio processing` `Benchmarking`
-
----
-
-### [ASR Edge Evaluation Workbench](https://github.com/misialyna/asr-edge-evaluation-workbench) — Benchmarking ASR models on edge hardware
-
-Toolkit do ewaluacji modeli Whisper na **NVIDIA Jetson Orin** i CPU. Mierzy WER, CER, RTF, latencję oraz zasoby (RAM, GPU, temperatura, moc) via `tegrastats`/`psutil`. Generuje raport Markdown i dashboard Streamlit z automatyczną rekomendacją konfiguracji. Zaprojektowany z myślą o systemie voice WATUS.
-
-| Komponent | Implementacja |
-|---|---|
-| Runtime | `FasterWhisperAdapter` + `FakeAdapter` (Protocol pattern) |
-| Telemetria | `tegrastats` (JetPack 5 & 6) z fallbackiem `psutil` |
-| Metryki | WER · CER · RTF · RTFx · latency (Polish text normalizer) |
-| Rekomendacja | Rule-based z konfigurowalnymi wagami (WER·0.5, RTFx·0.3, RAM·0.2) |
-| Raportowanie | Jinja2 Markdown + matplotlib · Streamlit dashboard (4 widoki) |
-
-`Python` `Faster-Whisper` `Pydantic v2` `Streamlit` `tegrastats` `NVIDIA Jetson` `Edge AI` `Polish NLP`
-
----
-
-### CTF 2024/2025 — WAT CyberSecurity Club Competition
-
-Three-challenge CTF suite authored for the 2024/2025 academic competition. Each challenge is self-contained with infrastructure, solution guide, and deployment option.
-
-| Challenge | Repository | Category | Technique |
-|---|---|---|---|
-| Social Engineering | [ctf-social-engineering](https://github.com/misialyna/ctf-social-engineering) | Phishing analysis | Identify indicators in a phishing email; find a hidden flag in the confirmation page source |
-| Web Exploitation | [ctf-web-exploitation](https://github.com/misialyna/ctf-web-exploitation) | Command injection + file upload | Flask app with intentional RCE via `subprocess` and unrestricted upload endpoint |
-| Network Exploitation | [ctf-network-exploitation](https://github.com/misialyna/ctf-network-exploitation) | HTTP header manipulation | Forge `X-Forwarded-For` to spoof a privileged IP and access the admin panel |
+| Social Engineering | Phishing analysis | Identify indicators in a convincing phishing email; discover a hidden flag in the confirmation page source |
+| Web Exploitation | Command injection + insecure file upload | Flask app with intentional RCE via `subprocess` and unrestricted upload endpoint |
+| Network Exploitation | HTTP header manipulation | Forge `X-Forwarded-For` to spoof a privileged IP and access the admin panel |
 
 `Python` `Flask` `HTML/CSS` `Web Security` `CTF Design` `Network Exploitation`
 
 ---
 
-### CTF 2025/2026 — Multi-stage chained challenge
+### [Phishing-Bank CTF](https://github.com/misialyna/phishing-bank-ctf-2026) — Multi-stage security challenge authored for the 2025/2026 academic competition
 
-A four-part chained CTF authored for the 2025/2026 academic competition. Solving each stage unlocks the next — from cryptography and algebra through a phishing bank login to OSINT and steganography.
+A three-part chained CTF: players analyse a fake online bank ("SecureBank"), decode a Base64 cipher trail, solve a linear equation system to derive login credentials, and finally authenticate to capture the flag. Ships with a complete solution guide and three deployment options.
 
-| Stage | Repository | Category | Technique |
-|---|---|---|---|
-| 1 — Encrypted Trail | [ctf-szyfrowany-trop](https://github.com/misialyna/ctf-szyfrowany-trop) | Cryptography + logic | Base64 decoding, solve a system of linear equations to derive login credentials |
-| 2 — Phishing Bank | [ctf-falszywy-bank](https://github.com/misialyna/ctf-falszywy-bank) | Web security | Analyse HTML source, find a hidden Base64 comment, authenticate with credentials from stage 1 |
-| 3 — The Spy | [ctf-the-spy](https://github.com/misialyna/ctf-the-spy) | OSINT | Analyse a certificate image, locate the subject on social media, decode a hidden message |
-| 4 — Landscape | [ctf-landscape](https://github.com/misialyna/ctf-landscape) | Steganography | Extract a hidden flag from image metadata via `exiftool` |
+| Stage | Technique |
+|---|---|
+| Encrypted Trail | Base64 decoding + linear algebra to derive credentials |
+| Phishing Bank | HTML source analysis, hidden comments, authentication bypass |
+| OSINT | Metadata and social media analysis from a certificate image |
 
-`Python` `Flask` `HTML/CSS` `CTF Design` `Steganography` `OSINT` `Cryptography`
+`Python` `Flask` `HTML/CSS` `JavaScript` `Web Security` `CTF Design` `Steganography` `OSINT`
+
+---
+
+### [CTF Challenge Collection — Archiwum](https://github.com/misialyna/ctf-archiwum) — Additional authored challenges
+
+A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
+
+| Challenge | Category | Technique |
+|---|---|---|
+| Landscape | Steganography | Extract a hidden flag from image metadata via `exiftool` |
+| Szyfrowany Trop | Cryptography + logic | Decode Base64, solve a system of equations to reconstruct credentials |
+| The Spy | OSINT | Analyse a certificate image, find the subject's social media profile, decode a hidden message |
+
+`CTF Design` `Steganography` `OSINT` `Cryptography` `Python`
 
 ---
 
