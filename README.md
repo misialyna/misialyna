@@ -24,7 +24,7 @@ I'm a Cryptology & Cybersecurity student at the Faculty of Cybernetics, Military
 
 I build things that have to work in the real world — under latency budgets, on edge hardware, in front of a live audience. My flagship work is **AIWAT**, an autonomous interactive robot whose real-time voice stack I designed and engineered end-to-end; it won the Rector's award for the best student research project and took **1st place at the Students' Cybernetics Symposium 2026**. Alongside AI/robotics, I work in offensive and defensive security: I author and run CTF challenges, study digital forensics and web exploitation, and serve as Secretary of the WAT CyberSecurity Science Club.
 
-I've presented research at national and international conferences (Poland, Romania, France), trained across Europe through military exchange programmes (EMILYO / Erasmus+ in Romania, Greece and France), and I care about turning hard technical work into something people can actually understand and use.
+I've presented research at national and international conferences (Poland, Romania), trained across Europe through military exchange programmes (EMILYO / Erasmus+ in Romania, Greece and France), and I care about turning hard technical work into something people can actually understand and use.
 
 **Languages** — Polish (native) · English (professional)  
 **Graduating** — June 2027 · 5-year integrated Master's, currently 4th year  
@@ -167,13 +167,13 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 | Year | Award |
 |---|---|
 | 2026 | **1st place** — Students' Cybernetics Symposium (SCS) 2026, situational awareness in AIWAT |
-| 2026 | **Rector's Award** — best student project in a science club (AIWAT / "Waciak") |
+| 2026 | **Rector's Award** — best student research project in a science club (AIWAT / "Waciak") |
 | 2026 | **Letter of commendation** from the Rector-Commandant for outstanding scientific achievement at home and abroad |
 | 2026 | **3rd place** — "Military Sciences & Information", 48th Cadet-Nav Scientific Conference, Naval Academy "Mircea cel Bătrân", Romania |
 | 2025 | **2nd place** — Students' Cybernetics Symposium (SCS) 2025, HelpDesk project |
 | 2025 | Certificate for contribution to the academic community & student research movement |
-| 2025 | Top annual assessment · distinguished-student invitation to the Belweder Palace |
-| 2024-2026 | Secretary of the WAT CyberSecurity Science Club — co-organiser of CTF competition & conferences |
+| 2025 | Top annual assessment (6/6) · distinguished-student invitation to Cadet Day at the Belweder Palace |
+| ongoing | Secretary of the WAT CyberSecurity Science Club — co-organiser of CTF competition & conferences |
 
 <details>
 <summary><b>Talks, conferences & leadership</b></summary>
@@ -206,8 +206,8 @@ A set of standalone CTF tasks spanning steganography, cryptography, and OSINT.
 ## GitHub Stats
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=misialyna&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=14b8a6&icon_color=0e7490&text_color=808080&bg_color=00000000" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=misialyna&layout=compact&hide_border=true&langs_count=8&title_color=14b8a6&text_color=808080&bg_color=00000000" alt="Top languages" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=misialyna&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=14b8a6&icon_color=0e7490&text_color=808080&bg_color=00000000&cache_seconds=1" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=misialyna&layout=compact&hide_border=true&langs_count=8&title_color=14b8a6&text_color=808080&bg_color=00000000&cache_seconds=1" alt="Top languages" />
 </div>
 
 ---
